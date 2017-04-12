@@ -89,12 +89,11 @@ emphstyle={\color{OliveGreen}\bfseries}
 \usepackage[os=win]{menukeys}
 
 
-\title{Title for your awesome presentation}
+\title{Diretrizes para Avaliação de Ecossistemas}
 
-\subtitle{Specific \& well focused details\\you'll talk about (subtitle)}
+\subtitle{Fatores sociais e suas influências}
 
-\date{12 April 2017\\Session 1: Common Tasks and Concepts about it\\[0.5ex]
-13 April 2017\\Session 2: Software Libraries and Resources you might \\want to know about}
+\date{12 de Abril de 2017}
 \author{Vinicius Schettino}
 \institute{
 Departamento de Ciência da Computação\\
@@ -107,43 +106,126 @@ Universidade Federal de Juiz de Fora
 \maketitle
 
 \begin{frame}[label=LO]
-\frametitle{Learning Outcomes}
-
-At the end of the seminar, participants will be able to:
+\frametitle{Contexto}
 
 \begin{itemize}
-\item Explain examples of NLP applications and related technical issues.
-\item Explain the layers of NLP and corresponding processing tasks.
-\item<alert@2> Use existing libraries to perform common NLP processing tasks.
-\item<alert@2> Use wordnet-based semantic networks to provide multilingual semantic information in NLP applications.
+\item Evolução de Linhas de Produto de Sofware para ECOS
+\item Revisão e Potencialização dos desafios da ES
+\item Poucos problemas novos; Porém, nova dimensão dos conhecidos
+\item ECOS são vitais para milhões de pessoas e organizações
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Motivação}
+  Os principais objetivos ao se avaliar um ECOS são:
 
-\begin{frame}{Contents}
-\setbeamertemplate{section in toc}[sections numbered]
-\tableofcontents[hideallsubsections]
+	\begin{itemize}
+		\item Observar a atratividade sob determinados aspectos
+		\item Escolher entre concorrentes
+		\item Inferir o potêncial e os riscos
+	\end{itemize}
 \end{frame}
 
 
-\include{nlp-cl}
-\include{example-apps}
-\include{layers}
-\include{student-projects}
-\plain{End of Session 1\\See you next week!}
-\include{common-tasks}
-\include{wordnet}
-\plain{The End\\Thank you!}
+\begin{frame}{Definição}
+  Os aspectos sociais se referem a interação entre os agentes participantes:
+	\begin{itemize}
+		\item Descrevem como os participantes se comunicam
+		\item Modelam a manutenção e o monitoramento destas relações
+		\item Descrevem as informações relevantes ao contexto que podem ser observadas
+	\end{itemize}
+\end{frame}
 
-\appendix
+\begin{frame}{Definição}
+  Os aspectos sociais são análogos aos ecossistemas biológicos e sociais; Pode-se perguntar:
+	\begin{itemize}
+		\item Porque os envolvidos interagem desta maneira?
+		\item Qual a capacidade e o engajamento dos envolvidos para promoção do ECOS?
+		\item Qual conhecimento é obtido através das interações?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Workflow de avaliação}
+  A avaliação destes aspectos deve ser feita de seguinte maneira:
+	\begin{enumerate}
+		\item Modelar os atores e o conhecimento do ECOS
+		\item Estabelecer qual é o ambiente de apoio à rede
+		\item Calcular fatores sociais do ECOS
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{1. Modelar os atores e o conhecimento}
+	\begin{itemize}
+		\item É preciso identificar quem são os atores e quais são os principais artefatos
+    \begin{enumerate}
+        \item \textbf{Atores}: Stakeholders, desenvolvedores, jornalistas, etc
+        \item \textbf{Artefatos}: Fedback, código, diagramas, requisitos, etc
+    \end{enumerate}
+		\item Como eles interagem
+    \begin{enumerate}
+        \item \textbf{Possuído por}: artefato -> proprietário
+        \item \textbf{Interessado} em: Atores interessados na evolução de determinado artefato
+        \item \textbf{Depende de}: Relação de dependência entre dois artefatos
+        \item \textbf{membro de}: Agrupa um conjunto de atores em razão de um interesse comum (cluster)
+    \end{enumerate}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{2. Estabelecer o Ambiente de Apoio}
+	\begin{itemize}
+		\item Quais são os elementos de interação?
+      \begin{enumerate}
+          \item \textbf{Perfil}: Registro público do elemento
+          \item \textbf{Mural}: Comentários anexados em atores ou artefatos
+          \item \textbf{Compartilhamento de Dados}: download e upload de informações
+          \item \textbf{Novas Comunicações}: recebimento de atualizações sobre elementos de interesse
+          \item \textbf{Agrupamento}: Clusterização de atores e conhecimentos
+          \item \textbf{Pesquisa}: busca por atores e conhecimentos
+          \item \textbf{Sugestões}: Inferência de relacionamentos de interesse entre atores e outros atores ou conhecimentos
+          \item \textbf{Mensagens}: Comunicação pessoal entre os atores
+      \end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{3. Calcular fatores sociais}
+  \begin{itemize}
+    \item Apoiar decisões estratégicas
+    \item Registro da dimensão temporal
+    \item Influencia:
+      \begin{enumerate}
+        \item Mudanças na interface
+        \item extensão de artefatos
+        \item mudanças de responsabilidade entre atores
+        \item descoberta automática de conhecimento (e suas relações)
+      \end{enumerate}
+      \item Observa-se os fatores relevantes:
+      \begin{enumerate}
+        \item Interação
+        \item Utilidade
+        \item Reputação
+        \item Promoção
+        \item Contribuição
+        \item Recomendação
+      \end{enumerate}
+  \end{itemize}
+\end{frame}
+
 
 \begin{frame}[allowframebreaks]
 \frametitle{Bibliography}
 
-\alert{\footnotesize I am using the APA referencing/citation style in this presentation. \emph{You} should be using Harvard Cite-Them-Right style -- do not copy and paste from this list!}
 
 \nocite{*}
 \printbibliography[heading=none]
+WERNER, C.M.L., SANTOS, R.P., 2012, “Ecossistemas de Software: Estágio Atual,
+Direções de Pesquisa e a Prática na Indústria de Software” In: Proceedings of
+the XV Ibero-American Conference on Software Engineering, Buenos Aires,
+Argentina.
+
+dos Santos, Rodrigo Pereira. ENGENHARIA E GERENCIAMENTO DE ECOSSISTEMAS DE SOFTWARE. Diss. Universidade Federal do Rio de Janeiro, 2013.
+
+Manikas, Konstantinos. "Revisiting software ecosystems research: A longitudinal literature study." Journal of Systems and Software 117 (2016): 84-103.
 
 \end{frame}
 
